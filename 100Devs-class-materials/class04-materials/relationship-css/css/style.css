@@ -1,0 +1,21 @@
+h1 {
+  color: purple;
+}
+
+h2 {
+  color: yellow;
+}
+
+section > h2 {
+  color: blue;
+}
+
+/* article h2 can also because h2 is direct child of article*/
+
+article > h2 {
+  color: red;
+}
+
+section article h2 {
+  color: orange;
+}

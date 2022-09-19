@@ -1,0 +1,169 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: "Rokkitt", serif;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    display: flex;
+  }
+}
+
+/* main {
+  background-color: aqua;
+} */
+
+/* ================== title 1 */
+.title--1 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .title--1 {
+    font-size: 3rem;
+  }
+}
+
+/* ================== title 2 */
+.title--2 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  .title--2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* ================== title 3 */
+.title--3 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .title--2 {
+    font-size: 1.5rem;
+  }
+}
+
+.section-x {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.section-y {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.header {
+  display: flex;
+  flex-direction: column;
+
+  font-family: sans-serif;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 700px) {
+  .header {
+    display: flex;
+    padding: 10px;
+  }
+
+  .header__nav {
+    display: block;
+  }
+
+  .header__menu {
+    display: none;
+  }
+}
+
+div.header__top {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.joinExtra,
+.Login {
+  margin-top: 20px;
+}
+
+.header__logo-link {
+  width: 100px;
+  height: auto;
+}
+
+.search__button {
+  margin: 25px 0;
+  width: 150px;
+  display: flex;
+  border: 1px solid white;
+  background-color: white;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .header__nav-link {
+    display: none;
+  }
+}
+
+.header__nav-list li + li {
+  margin-top: 20px;
+}
+
+/******************************************
+/* HERO STYLES
+/*******************************************/
+.hero {
+  display: block;
+}
+
+h2.title--2,
+p {
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1100px) {
+  .hero__container {
+    display: flex;
+    max-width: 90%;
+  }
+
+  .hero__container ul {
+    margin-left: 20px;
+  }
+}

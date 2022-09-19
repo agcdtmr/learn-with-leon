@@ -1,0 +1,90 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: sans-serif;
+  background-color: #161f30;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.header {
+  padding: 20px;
+}
+
+a.header__logo-link img {
+  width: 30px;
+  height: auto;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.header__nav-link {
+  display: none;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .header__nav-link {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+.header__button {
+  background-color: #383f4e;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 3px;
+}
+
+.header__nav-list li + li {
+  margin-left: 81px;
+}
+
+footer {
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

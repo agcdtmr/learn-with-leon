@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="BBC News" />
+    <meta name="keywords" content="bbc, news, articles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>BBC News</title>
+
+    <!-- external CSS link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/" class="header__logo-link">
+        <img src="/img/download.png" alt="Logo" />
+      </a>
+
+      <button type="button" class="header__signin">
+        <img src="/img/account_circle_white_24dp.svg" alt="Sign in" />
+        <span>Sign in</span>
+      </button>
+
+      <nav class="header__nav">
+        <ul>
+          <li>
+            <a href="/" class="header__nav-link">Home</a>
+          </li>
+          <li>
+            <a href="/" class="header__nav-link">News</a>
+          </li>
+          <li>
+            <a href="/" class="header__nav-link">Sport</a>
+          </li>
+          <li>
+            <a href="/" class="header__nav-link">Reel</a>
+          </li>
+          <li>
+            <a href="/" class="header__nav-link">Worklife</a>
+          </li>
+          <li>
+            <a href="/" class="header__nav-link">Travel</a>
+          </li>
+          <li>
+            <a href="/" class="header__nav-link">Future</a>
+          </li>
+          <li>
+            <a href="/" class="header__nav-link">Culture</a>
+          </li>
+          <li>
+            <a href="/" class="header__nav-link">More</a>
+          </li>
+        </ul>
+      </nav>
+
+      <form action="" class="search-form">
+        <input
+          type="search"
+          id="site-search"
+          name="search"
+          placeholder="Search"
+        />
+        <button class="search__button">
+          <img src="img/search_black_24dp.svg" alt="Search" />
+        </button>
+      </form>
+    </header>
+    
+    <main class="main">
+      <section>
+        <!-- h2 -->
+        <h1>Welcome to BBC.com</h1>
+        <h4>Thursday, 13 August</h4>
+      </section>
+  
+      <section class="top-section">
+        <div class="card-primary card-primary--featured">
+          <a class="card-primary__link" href="#">
+            <img class="card-primary__img" src="/img/cloud.jpeg" alt="Israel and UAE's Presidents"/>
+            <div class="card-primary__caption">
+              <h1>
+                Israel and UAE strike historic peace deal
+              </h1>
+              <p>
+                Israel and the UAE agree to normalise relations, making the third
+                Israel-Arab peace deal
+              </p>
+            </div>
+          </a>
+              <a class="card-primary__category card-primary__category--red" href="#section">MIDDLE EAST
+              </a>
+        </div>
+  
+        <ul class="articles-primary">
+          <li>
+            <div class="card-primary__article">
+              <a class="card-primary__link__article" href="#">
+                <img class="card-primary__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._eopMCWX1tC6laYAa0DkCgHaEc%26pid%3DApi&f=1" alt="America and Canada's flags" />
+                <div class="card-primary__caption__article">
+                  <h2>
+                    Americans, go home: Tension at Canada-US border
+                  </h2>
+                </div>
+              </a>
+              <a class="card-primary__category card-primary__category--red" href="#">CANADA
+              </a>
+            </div>
+          </li>
+  
+          <li>
+            <div class="card-primary__article">
+              <a class="card-primary__link__article" href="#">
+                <img class="card-primary__img" src="/img/1200px-Anvil_shaped_cumulus_panorama_edit.jpeg" alt="Scientist holding a vaccine" />
+              </a>
+              <div class="card-primary__caption__article">
+                <h2>
+                  How will the world vaccinate seven billion people?
+                </h2>
+              </div>
+              <a class="card-primary__category card-primary__category--red">HEALTH</a>
+            </div>
+            
+          </li>
+  
+          <li>
+            <div class="card-primary__article">
+              <a class="card-primary__link__article" href="#">
+                <img class="card-primary__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.QySrTfvUUgF0lBxxc6Nz8wHaEK%26pid%3DApi&f=1" alt="Woman in front of a laptop" />
+              </a>
+              <div class="card-primary__caption__article">
+                <h2>
+                  The online 'productivity gyms'
+                </h2>
+              </div>
+              <a class="card-primary__category card-primary__category--red">WORKLIFE</a>
+            </div>
+          </li>
+  
+          <li>
+            <div class="card-primary__article">
+              <a class="card-primary__link__article" href="#">
+                <img class="card-primary__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.9dp6pbfHyRCyWHRUn6Tu7wHaEK%26pid%3DApi&f=1" alt="Black and white picture of an artist" />
+              </a>
+              <div class="card-primary__caption__article">
+                  <h2>
+                    The folk singer murdered for his music'
+                  </h2>
+              </div>
+              <a class="card-primary__category card-primary__category--red">CULTURE</a>
+            </div>
+            
+          </li>
+  
+        </ul>
+      </section>
+  
+      <section>
+          <a class="news-title" href="">News</a>
+  
+          
+            <ul class="articles-primary articles-secondary">
+              <li>
+                <div class="card-primary__article">
+                
+                  <a class="card-primary__link__article" href="#" >
+                    <img class="card-primary__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.MUcmJZ5j7ngOzFyVGc2MtAHaEK%26pid%3DApi&f=1" alt="Joe Bieden and running mate Kamala Harris" />
+                    Biden and Harris say Trump has left US 'in tatters'
+                  <div class="card-news__caption__article">
+                    <p>
+                      Joe Bieden and running mate Kamala Harris call President Donal trump a "whining" incompetent leader.
+                    </p>
+                  </div>
+                  
+                </a>
+                  <a class="card-primary__category card-primary__category--red" href="#">US ELECTION 2020</a>
+                
+              </div>
+              </li>
+              
+           
+  
+              <li>
+                <div class="card-primary__article">
+                  <a class="card-primary__link__article" href="#">
+                    <img class="card-primary__img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.mGLTNCk-O7rmB_cLot7GdAHaEK%26pid%3DApi&f=1" alt="Women's March" />
+                    Women form 'solidarity chains' in Belarus protests
+                  <div class="card-news__caption__article">
+                    <p>
+                      Women take to the streets of Minsk dressed in white as they demand an end to police brutality
+                    </p>
+                  </div>  
+                  
+                  </a>
+                  <a class="card-primary__category card-primary__category--red" href="#">EUROPE</a>
+                </div>
+                
+              </li>
+  
+              <li>
+
+                <div class="card-primary__article">
+                  <a class="card-primary__link__article" href="#">
+                    <img class="card-primary__img" src="/img/cloudy_744190.png" alt="TrumpHole" />
+                    Trump says low-pressure shower heads won't wash
+                  </a>
+                  <div class="card-news__caption__article">
+                    <p>
+                      The US calls for rules to be eased after Donald Trump complained of issues washing his hair
+                    </p>
+                  </div>
+                  
+                  
+                  <a class="card-primary__category card-primary__category--red" href="#">US & CANADA</a>
+                </div>
+                
+              </li>
+          </div>
+      </section>
+    </main>
+
+    <footer></footer>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

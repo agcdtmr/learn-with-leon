@@ -1,0 +1,332 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: Times, serif;
+}
+
+.type-serif {
+  font-family: "Source Serif Pro", serif;
+}
+
+.section-x {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.section-y {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section-y-xs {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.container--small {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .columns {
+    /* flex shit */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .columns__item {
+    /* widt: cal(.....) */
+    width: 33.3333%;
+  }
+}
+
+.font--uppercase {
+  text-transform: uppercase;
+}
+
+.bgc--white {
+  background-color: white;
+}
+
+.color--black {
+  color: black;
+}
+
+.color--white {
+  color: white;
+}
+
+.bgc--light {
+  background-color: rgba(242, 244, 247, 255);
+}
+
+/* ================== title 1 */
+.title--1 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .title--1 {
+    font-size: 6rem;
+  }
+}
+
+/* ================== title 2 */
+.title--2 {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  .title--2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* ================== title 3 */
+.title--3 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .title--2 {
+    font-size: 1.5rem;
+  }
+}
+
+.font-size-xs {
+  font-size: 0.8rem;
+}
+
+.font-size-m {
+  font-size: 1.5rem;
+}
+
+.button--bgc-black {
+  background-color: black;
+  color: white;
+  padding: 15px 45px;
+  text-decoration: none;
+}
+
+.button--bgc-white {
+  background-color: white;
+  color: black;
+  padding: 15px 45px;
+  text-decoration: none;
+}
+
+/******************************************
+/* HEADER LAYOUT
+/*******************************************/
+.header {
+  display: flex;
+}
+
+a.header__logo-link img {
+  width: 100px;
+  height: auto;
+}
+
+.header__nav {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__nav-list {
+  display: none;
+  align-items: center;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .header__nav-list {
+    display: flex;
+  }
+
+  .header__menu {
+    display: none;
+  }
+}
+
+.header__nav-link {
+  margin-left: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+/******************************************
+/* HERO STYLES
+/*******************************************/
+
+.hero {
+  background-image: url(/img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  /* padding-top: 500px;
+  padding-bottom: 500px; */
+  border-radius: 0% 0% 10% 55%;
+}
+
+@media screen and (min-width: 500px) {
+  .hero {
+    background-position: initial;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
+
+.hero__content a {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.promotion {
+  display: none;
+  background-color: black;
+  padding: 60px 20px;
+  line-height: 2;
+  max-width: 250px;
+}
+
+@media screen and (min-width: 700px) {
+  .promotion {
+    display: inline-block;
+  }
+}
+
+.promotion-text {
+  margin-top: 50px;
+}
+
+.promotion a {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+/******************************************
+/* USP's STYLES
+/*******************************************/
+.columns-items {
+  text-align: center;
+}
+
+.columns-item > * + * {
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 700px) {
+  .columns-items {
+    display: flex;
+    width: calc(100%- 50px);
+  }
+
+  .columns-items div {
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+}
+/******************************************
+/* MEDIA SECTION STYLES
+/*******************************************/
+.media-section__text {
+  padding-right: 60px;
+}
+
+.media-section__text * + * {
+  margin-top: 15px;
+}
+
+.media-section h2,
+p {
+  line-height: 1.5;
+}
+
+.media-section a {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.media-section img {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .media-section {
+    display: flex;
+    width: calc(100%- 20px);
+  }
+  .media-section img {
+    display: block;
+  }
+}
+
+/******************************************
+/* TEAM STYLES
+/*******************************************/
+
+.team-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.team-section__list li {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+@media screen and (min-width: 700px) {
+  .team-section__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .team-section__list li {
+    width: calc(33.3333% - 30px);
+    max-width: none;
+    margin: 0;
+  }
+}
+
+.team-section__list a {
+  display: block;
+  margin: 0 20px;
+  text-align: center;
+}

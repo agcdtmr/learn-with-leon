@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Cuisine Restaurant Website" />
+    <meta name="keywords" content="restaurant, breakfast, lunch" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Cuisine Restaurant Website</title>
+
+    <!-- https://dribbble.com/shots/12927498-Cuisine-Restaurant-Website -->
+
+    <!-- external CSS link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <a href="/" class="header__logo-link">
+          <img src="/img/logo.png" alt="Cuisine Logo" />
+        </a>
+
+        <nav class="header__nav">
+          <ul>
+            <li>
+              <a href="/" class="header__nav-link">Home</a>
+            </li>
+            <li>
+              <a href="/about" class="header__nav-link">About Us</a>
+            </li>
+            <li>
+              <a href="/order" class="header__nav-link">Order Now</a>
+            </li>
+            <li>
+              <a href="/blog" class="header__nav-link">Blog</a>
+            </li>
+            <li>
+              <a href="/location" class="header__nav-link">Location</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button type="button" class="shopping-cart__button">
+          <img
+            src="/img/shopping_cart_black_24dp.svg"
+            alt="Open Shopping Cart"
+          />
+        </button>
+
+        <a href="/search" class="search__button">
+          <img src="/img/search_black_24dp.svg" alt="Search" />
+        </a>
+
+        <button type="button" class="burger">
+          <img src="/img/menu_black_24dp.svg" alt="Menu" />
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero layout-section">
+        <div class="hero_content layout-container">
+          <h1 class="type-serif h1">
+            Welcome <br />
+            To Our Cuisine <br />
+            Restaurant
+          </h1>
+
+          <form class="form" action="">
+            <div class="hero-form">
+              <img src="/img/search_black_24dp.svg" alt="Search" />
+              <input class="hero-form-input" type="text" />
+            </div>
+
+            <button type="button" class="link__orange">Location</button>
+          </form>
+
+          <ul class="socials">
+            <li>
+              <a href=""><img src="/img/facebook.svg" alt="Facebook" /> 252k</a>
+            </li>
+            <li>
+              <a href=""><img src="/img/twitter.svg" alt="Twitter" />55k</a>
+            </li>
+            <li>
+              <a href=""
+                ><img src="/img/instagram.svg" alt="Instagram" />100k</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="aboutUs layout-section">
+        <div class="layout-container">
+          <div class="aboutUs_content">
+            <h6 class="text-color-orange">About Us</h6>
+
+            <h2 class="type-serif h2 m-top-xs">
+              Discover Our <br />
+              Restaurant Story
+            </h2>
+
+            <p class="m-top-m">
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin
+              professor at Hampden-Sydney College in Virginia, looked up one of
+              the more obscure Latin words, consectetur, from a Lorem Ipsum
+              passage, and going through the cites of the word in classical
+              literature, discovered the undoubtable source. Lorem Ipsum comes
+              from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+              Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
+              BC. This book is a treatise on the theory of ethics, very popular
+              during the Renaissance. The first line of Lorem Ipsum, "Lorem
+              ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </p>
+
+            <p class="m-top-m">
+              The standard chunk of Lorem Ipsum used since the 1500s is
+              reproduced below for those interested. Sections 1.10.32 and
+              1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
+              reproduced in their exact original form, accompanied by English
+              versions from the 1914 translation by H. Rackham.
+            </p>
+
+            <div class="m-top-m">
+              <a href="/menu/" class="link__orange">Discover Menu</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ratingSection layout-section">
+        <div class="layout-container">
+          <div class="rating_content">
+            <div class="rating_content__top">
+              <h6 class="text-color-orange">Testimonials</h6>
+
+              <h2 class="type-serif h2 m-top-xs">Customer Say</h2>
+
+              <img
+                class="rating_img m-top-m"
+                src="/img/circle-photo.jpeg"
+                alt="Customer photo"
+              />
+
+              <p class="m-top-xs">Anastacia</p>
+
+              <p>Art Director</p>
+
+              <img class="rating_img" src="/img/star.jpeg" alt="rating" />
+            </div>
+            <q class="m-top-xs"
+              >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat."</q
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
